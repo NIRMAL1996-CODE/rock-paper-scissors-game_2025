@@ -1,0 +1,50 @@
+<!-- HTML for rock paper scissors Game -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rockpaperscissorsgame</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <div class="container">
+    <div class="intro-area">
+  <h1>Rock Paper Scissors Game</h1>
+  <p>Welcome to the exciting Rock Paper Scissors game! Get ready to challenge yourself and test your skills.Before you dive into the game, let's review the simple rules to ensure you play like a pro and achieve the best results!</p>
+
+  <div class="div1">
+    <img id="intro" src="rockpaperscissors_images/into.jpg" alt="gameimage">
+    <img id="rules-image" src="rockpaperscissors_images/rules.jpg" alt="rulesofgame">
+  </div>
+  <button id="start-button">Start-Game</button>
+</div>
+
+  <div class="game-area">
+    <div class="choices">
+      <button id="rock" class="choice-button">Rock</button>
+      <button id="paper" class="choice-button">Paper</button>
+      <button id="scissors" class="choice-button">Scissors</button>
+    </div>
+
+    <div class="selections">
+      <div class="user">
+        <h3>Your Choice:</h3>
+        <p id="user-choice">None</p>
+      </div>
+      
+      <div class="computer">
+        <h3>Computer's Choice:</h3>
+        <p id="computer-choice">None</p>
+      </div>
+     
+      <div class="result">
+        <h3>Result: <span id="result-text">____</span></h3>
+      </div>
+    </div>
+      <button id="reset-button">Reset-Game</button>
+  </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
