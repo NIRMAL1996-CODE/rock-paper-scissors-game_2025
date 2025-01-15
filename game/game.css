@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-color:  #493628;
+  color: #AB886D;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+  margin: 10px;
+  padding: 10px;
+}
+p{
+  padding: 10px;
+  font-size: 20px;
+}
+
+.div1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro , #rules-image{
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#start-button ,#reset-button{
+  padding: 20px;
+  margin: 20px;
+  background-color: #AB886D;
+  color: #493628;
+  border-radius: 20px;
+  width: 10%;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.choice-button{
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  color: azure;
+  font-size: 30px;
+}
+#rock{
+  background-color: rgb(255, 230, 0);
+}
+#paper{
+  background-color: rgb(137, 222, 108);
+}
+#scissors{
+  background-color: pink;
+}
+
+.selections{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+ 
+}
+.user, .computer, .result{
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+
+  #intro,
+  #rules-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .choice-button {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+  }
+
+  #start-button,
+  #reset-button {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .selections {
+    font-size: 16px;
+  }
+
+  .user,
+  .computer,
+  .result {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #intro,
+  #rules-image {
+    height: 150px;
+    width: 150px;
+  }
+
+  .choice-button {
+    width: 80px;
+    height: 80px;
+    font-size: 12px;
+  }
+
+  #start-button,
+  #reset-button {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .user,
+  .computer,
+  .result {
+    max-width: 200px;
+  }
+}
